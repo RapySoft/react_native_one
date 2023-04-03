@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'orange',
   },
   box3: {
-    start:-50,
+    start: -50,
     width: 50,
     height: 50,
     borderWidth: 2,
