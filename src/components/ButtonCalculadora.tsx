@@ -1,20 +1,20 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 
-interface PropsButton {
+export interface PropsButtonCal {
   title: string;
-  textColor?: 'black' | 'white';
+  textColor?: 'black';
   onPress: () => void;
-  backgroundColor?: '#c0bcbc' | '#535353' | '#edb525';
+  backgroundColor?: '#c0bcbc' | '#FF9427';
 }
 
-export const ButtonCalculadora = (props: PropsButton) => {
+export const ButtonCalculadora = (props: PropsButtonCal) => {
   return (
     <TouchableOpacity
       onPress={props.onPress}
       style={{
         ...styles.touch,
-        backgroundColor: props.backgroundColor ?? '#c0bcbc',
+        backgroundColor: props.backgroundColor ?? '#2D2D2D',
       }}>
       <Text style={{...styles.text, color: props.textColor ?? 'white'}}>
         {props.title}
@@ -33,7 +33,6 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 30,
-    fontWeight: 'bold',
     textAlign: 'center',
   },
 });

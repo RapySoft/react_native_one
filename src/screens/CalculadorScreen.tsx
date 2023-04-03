@@ -32,32 +32,17 @@ export const CalculadoraScreen = () => {
           <ButtonCalculadora
             onPress={() => console.log('/')}
             title="/"
-            backgroundColor="#edb525"
+            backgroundColor="#FF9427"
           />
         </View>
         <View style={styles.containerRow}>
-          <ButtonCalculadora
-            onPress={() => console.log('7')}
-            textColor="black"
-            title="7"
-            backgroundColor="#535353"
-          />
-          <ButtonCalculadora
-            onPress={() => console.log('8')}
-            textColor="black"
-            title="8"
-            backgroundColor="#535353"
-          />
-          <ButtonCalculadora
-            onPress={() => console.log('8')}
-            textColor="black"
-            title="8"
-            backgroundColor="#535353"
-          />
+          <ButtonCalculadora onPress={() => console.log('7')} title="7" />
+          <ButtonCalculadora onPress={() => console.log('8')} title="8" />
+          <ButtonCalculadora onPress={() => console.log('9')} title="9" />
           <ButtonCalculadora
             onPress={() => console.log('X')}
             title="X"
-            backgroundColor="#edb525"
+            backgroundColor="#FF9427"
           />
         </View>
       </View>
