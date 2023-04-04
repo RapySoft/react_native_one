@@ -14,11 +14,16 @@ export const styles = StyleSheet.create({
   containerRow: {
     width: '100%',
     flexDirection: 'row',
+    marginTop: 10,
     justifyContent: 'space-between',
   },
   textResultOne: {
     color: 'white',
     fontSize: 30,
+  },
+  textSigno: {
+    color: 'white',
+    fontSize: 10,
   },
   textResultTwo: {
     color: 'white',
