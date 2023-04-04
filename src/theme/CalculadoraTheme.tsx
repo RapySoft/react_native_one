@@ -15,18 +15,24 @@ export const styles = StyleSheet.create({
     width: '100%',
     flexDirection: 'row',
     marginTop: 10,
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
+  },
+  containerRowSigno: {
+    flexDirection: 'row',
   },
   textResultOne: {
     color: 'white',
-    fontSize: 30,
-  },
-  textSigno: {
-    color: 'white',
-    fontSize: 10,
+    fontSize: 50,
+    marginEnd: 10,
   },
   textResultTwo: {
-    color: 'white',
-    fontSize: 50,
+    color: '#989898',
+    fontSize: 30,
+    marginEnd: 10,
+  },
+  textSigno: {
+    color: '#989898',
+    fontSize: 30,
+    marginEnd: 10,
   },
 });
