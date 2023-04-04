@@ -141,9 +141,6 @@ export const useCalculator = () => {
     addNumber,
     numberOne,
     numberTwo,
-    setNumberOne,
-    setNumberTwo,
     signoRef,
-    operationRef,
   };
 };
