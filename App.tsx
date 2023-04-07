@@ -1,22 +1,14 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-//import {TareaScreen} from './src/screens/TareaScreen';
-import {CalculadoraScreen} from './src/screens/CalculadorScreen';
-//import {FlexScreen} from './src/screens/FlexScreen';
-//import {HolaMundoScreen} from './src/screens/HolaMundoScreen';
-//import {CounterScreen} from './src/screens/CounterScreen';
-//import {BoxObjectModelScreen} from './src/screens/BoxObjectModelScreen';
-//import {DimensionesScreen} from './src/screens/DimensionesScreen';
-//import {PositionScreen} from './src/screens/PositionScreen';
+import {NavigationContainer} from '@react-navigation/native';
+import {StackNavigator} from './src/navigator/StackNavigator';
 
 const App = () => {
-  // return <HolaMundoScreen />;
-  // return <CounterScreen />;
-  //return <BoxObjectModelScreen />;
-  // return <DimensionesScreen />;
-  // return <PositionScreen />;
-  //return <FlexScreen />;
-  //return <TareaScreen />;
-  return <CalculadoraScreen />;
+  return (
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
+  );
 };
 
 export default App;
