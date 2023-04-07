@@ -1,16 +1,21 @@
-import {useNavigation} from '@react-navigation/native';
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Button, StyleSheet, Text, View} from 'react-native';
+import {AppStyle} from '../../theme/AppStyle';
+import {StackScreenProps} from '@react-navigation/stack';
 
-export const Pagina2Screen = () => {
-  const navigation = useNavigation();
+interface Props extends StackScreenProps<any, any> {}
+
+export const Pagina2Screen = (props: Props) => {
+  useEffect(() => {
+    props.navigation.setOptions({title: 'Pag 2', headerBackTitle: 'atras'});
+  }, [props.navigation]);
 
   return (
     <View style={styles.container}>
-      <Text>Pagina2Screen</Text>
+      <Text style={AppStyle.title}>Pagina2Screen</Text>
       <Button
         title="Pagina 3"
-        onPress={() => navigation.navigate('Pagina3Screen' as never)}
+        onPress={() => props.navigation.navigate('Pagina3Screen')}
       />
     </View>
   );

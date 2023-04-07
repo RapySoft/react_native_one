@@ -4,8 +4,18 @@ import {Pagina1Screen} from '../screens/navigation/Page1Screen';
 import {Pagina2Screen} from '../screens/navigation/Page2Screen';
 import {Pagina3Screen} from '../screens/navigation/Page3Screen';
 import {HomeScreen} from '../screens/HomeScreen';
+import {PersonaScreen} from '../screens/navigation/PersonaScreen';
+import {PersonInterface} from '../interfaces/PersonInterface';
 
-const Stack = createStackNavigator();
+export type RootStackParams = {
+  HomeScreen: undefined;
+  Pagina1Screen: undefined;
+  Pagina2Screen: undefined;
+  Pagina3Screen: undefined;
+  PersonaScreen: PersonInterface;
+};
+
+const Stack = createStackNavigator<RootStackParams>();
 
 export const StackNavigator = () => {
   return (
@@ -39,6 +49,11 @@ export const StackNavigator = () => {
         name="Pagina3Screen"
         options={{title: 'Page Three'}}
         component={Pagina3Screen}
+      />
+      <Stack.Screen
+        name="PersonaScreen"
+        options={{title: 'Persona'}}
+        component={PersonaScreen}
       />
     </Stack.Navigator>
   );
