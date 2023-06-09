@@ -52,6 +52,12 @@ export const HomeScreen = (props: Props) => {
         onPress={() => navigateScreen('Pagina3Screen')}>
         <Text style={styles.text}>Navegar pag 3</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigateScreen('calculadora')}>
+        <Text style={styles.text}>Calculadora</Text>
+      </TouchableOpacity>
     </View>
   );
 };
